@@ -13,6 +13,7 @@ export class Database {
   };
 
   public createConnection() {
+    console.log("Database -> db_uri", this.db_uri)
     mongoose.connect(this.db_uri, this.options);
   }
 

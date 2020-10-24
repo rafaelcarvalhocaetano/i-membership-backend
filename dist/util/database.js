@@ -16,6 +16,7 @@ class Database {
         };
     }
     createConnection() {
+        console.log("Database -> db_uri", this.db_uri);
         mongoose_1.default.connect(this.db_uri, this.options);
     }
 }
