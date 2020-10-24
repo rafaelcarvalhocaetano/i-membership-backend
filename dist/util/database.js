@@ -7,7 +7,7 @@ exports.Database = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 class Database {
     constructor() {
-        this.db_uri = 'mongodb+srv://question:q1w2e3r4@cluster0.4pdrr.mongodb.net/question?retryWrites=true&w=majority';
+        this.db_uri = process.env.MONGO || '';
         this.options = {
             useUnifiedTopology: true,
             useNewUrlParser: true,
