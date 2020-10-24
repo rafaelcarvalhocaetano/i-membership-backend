@@ -26,7 +26,7 @@ class IController {
                 const startIndex = (page - 1) * limit;
                 const endIndex = page * limit;
                 let result = {
-                    total_page: Math.round(((yield UserRepository_1.UserRepository.countDocuments().exec()) / limit))
+                    total_page: Math.round(((yield UserRepository_1.UserRepository.countDocuments().exec()) / limit)) ? Math.round(((yield UserRepository_1.UserRepository.countDocuments().exec()) / limit)) : 10
                 };
                 result.next = {
                     page: page,
