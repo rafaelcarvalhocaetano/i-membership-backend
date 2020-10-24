@@ -1,2 +1,2 @@
 import {Server} from './server';
-Server.server.listen(3030, () => console.log(' BANK - USER '));
+Server.server.listen(3030, () => console.log(' i-membership - USER '));
