@@ -16,7 +16,7 @@ class IController {
       const endIndex = page * limit;
 
       let result: any = {
-        total_page: Math.round((await UserRepository.countDocuments().exec() / limit)) ? Math.round((await UserRepository.countDocuments().exec() / limit)) : 10
+        total_page: Math.round((await UserRepository.countDocuments().exec() / limit))
       };
 
       result.next = {

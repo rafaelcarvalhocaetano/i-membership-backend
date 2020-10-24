@@ -2,8 +2,7 @@ import mongoose from 'mongoose';
 
 export class Database {
 
-
-  public db_uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/ibank';
+  public db_uri = 'mongodb+srv://question:q1w2e3r4@cluster0.4pdrr.mongodb.net/question?retryWrites=true&w=majority';
 
   private options = { 
     useUnifiedTopology: true,
@@ -13,7 +12,6 @@ export class Database {
   };
 
   public createConnection() {
-    console.log("Database -> db_uri", this.db_uri)
     mongoose.connect(this.db_uri, this.options);
   }
 

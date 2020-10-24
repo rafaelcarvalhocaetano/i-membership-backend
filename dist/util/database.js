@@ -7,7 +7,7 @@ exports.Database = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 class Database {
     constructor() {
-        this.db_uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/ibank';
+        this.db_uri = 'mongodb+srv://question:q1w2e3r4@cluster0.4pdrr.mongodb.net/question?retryWrites=true&w=majority';
         this.options = {
             useUnifiedTopology: true,
             useNewUrlParser: true,
@@ -16,7 +16,6 @@ class Database {
         };
     }
     createConnection() {
-        console.log("Database -> db_uri", this.db_uri);
         mongoose_1.default.connect(this.db_uri, this.options);
     }
 }
