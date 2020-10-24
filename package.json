@@ -1,0 +1,33 @@
+{
+  "name": "i-membership-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "clear && rm -rf ./dist && tsc && node ./dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-status": "^1.4.2",
+    "mongoose": "^5.9.27",
+    "nodemon": "^2.0.6",
+    "request": "^2.88.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.7",
+    "@types/http-status": "^1.1.2",
+    "@types/mongoose": "^5.7.34",
+    "@types/node": "^14.0.27",
+    "@types/request": "^2.48.5"
+  }
+}

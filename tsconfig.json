@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ],
+    "target": "es6",                         
+    "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    "outDir": "./dist",                        /* Redirect output structure to the directory. */
+    "esModuleInterop": true,                  /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "skipLibCheck": true,                     /* Skip type checking of declaration files. */
+    "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
+  },
+  "include": [
+    "**/*.ts",
+    "*.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "buildOnSave": true,
+  "compileOnSave": true,
+}
