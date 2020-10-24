@@ -1,2 +1,2 @@
-import {Server} from './server';
-Server.server.listen(3030, () => console.log(' i-membership - USER '));
+import {Server} from './server/server';
+Server.server.listen(3000, () => console.log(' i-membership - USER '));

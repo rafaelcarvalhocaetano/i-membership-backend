@@ -2,8 +2,8 @@ import express from 'express';
 import bodyParser from 'body-parser'; 
 import cors from 'cors'; 
 
-import { Database } from './util/database';
-import { UserRouter } from './routers/UserRouter';
+import { Database } from '../util/database';
+import { UserRouter } from '../routers/UserRouter';
 
 class Init {
 

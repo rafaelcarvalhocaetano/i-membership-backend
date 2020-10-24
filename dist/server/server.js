@@ -7,8 +7,8 @@ exports.Server = void 0;
 const express_1 = __importDefault(require("express"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
-const database_1 = require("./util/database");
-const UserRouter_1 = require("./routers/UserRouter");
+const database_1 = require("../util/database");
+const UserRouter_1 = require("../routers/UserRouter");
 class Init {
     constructor() {
         this.database = new database_1.Database();
