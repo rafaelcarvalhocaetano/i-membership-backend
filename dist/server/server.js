@@ -13,8 +13,8 @@ class Init {
     constructor() {
         this.database = new database_1.Database();
         this.server = express_1.default();
-        this.user_router = new UserRouter_1.UserRouter(this.server);
         this.database.createConnection();
+        this.user_router = new UserRouter_1.UserRouter(this.server);
         this.middler();
         this.router();
     }

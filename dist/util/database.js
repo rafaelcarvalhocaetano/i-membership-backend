@@ -7,7 +7,7 @@ exports.Database = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 class Database {
     constructor() {
-        this.db_uri = process.env.MONGO || '';
+        this.db_uri = process.env.MONGO || 'mongodb://localhost:27017/imembership';
         this.options = {
             useUnifiedTopology: true,
             useNewUrlParser: true,
